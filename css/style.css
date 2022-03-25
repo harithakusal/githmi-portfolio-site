@@ -255,3 +255,51 @@ figure {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+.main-container{
+  margin-top: 20px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  justify-content: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 20px;
+}
+
+.main-container .section{
+  margin-top: 20px;
+}
+
+.btn-container{
+  width: fit-content;
+  display: grid;
+  grid-template-columns: min-content min-content;
+  gap: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 100px;
+  color: black;
+}
+
+.btn-container p:hover{
+cursor: pointer;
+text-decoration: underline;
+color: blue;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .main-container{
+    grid-template-columns: 40% 40%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .main-container{
+    grid-template-columns: 100%;
+  }
+}
