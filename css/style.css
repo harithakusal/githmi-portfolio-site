@@ -271,6 +271,7 @@ figure {
 
 .main-container .section{
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .btn-container{
