@@ -20,3 +20,15 @@
 	});
 
 })(window.jQuery);
+
+
+function viewImg(img) {
+	$(".img-viewer-container").css("display", "grid");
+	$('#viewd-img').attr('src',img);
+}
+
+$(document).ready(function () {
+    $("#close-btn").click(function () {
+		$(".img-viewer-container").css("display", "none");
+    });
+});
